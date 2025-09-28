@@ -1,0 +1,7 @@
+-- Arquivo: init.sql
+CREATE TABLE IF NOT EXISTS orders (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    item TEXT NOT NULL,
+    payment TEXT NOT NULL,
+    done BOOLEAN DEFAULT 0
+);
